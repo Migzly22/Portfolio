@@ -105,14 +105,7 @@ ul{
 
 
 /*main Sidenav*/
-.sidenav{
-    position: fixed;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%,-50%);
-    z-index: 3;
 
-}
 .sidenav-info{
     
     width: 1.5rem;/*10*/
@@ -146,14 +139,6 @@ ul{
     background-color: var(--logo4);
 }
 
-.sidenav-info:hover  {
-    width: 6rem;
-    border-right: 3px solid var(--color3);
-}
-.sidenav-info:hover .sidetext{
-    display: block;
-}
-
 
 
 
@@ -165,31 +150,12 @@ ul{
 
 /*main Home page*/
 .mainhome{
-
     margin: 0;
-    margin-top: 5rem;
-
 }
 .home{
     display: grid;
-    grid-template-columns: 35% 40%;
-    justify-content: space-evenly;
     align-items: center;
-
     width: 100%;
-    height: calc(100dvh - 5rem);
-}
-.mainimg{
-    padding: 1rem;
-}
-.home .mainimg img{
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px solid var(--color2) ;
-}
-.intro{
-    min-width: 10rem;
-    padding: 1rem;
 }
 
 .intro h3{
@@ -204,7 +170,6 @@ ul{
 .intro p{
     margin-top: 1.5rem;    
 }
-
 
 .viewproj{
     height: 3rem;
@@ -223,43 +188,36 @@ ul{
 
 
 
-
 /*main About page*/
 .about{
     display: grid;
-    grid-template-columns: 30% 50%;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: calc(100dvh - 5rem);
 }
-.about > div{
-
-    margin-left: 3rem;
-    
+.about > div{    
     transition: border .5s ease, box-shadow .5s;
 }
 .aboutimg img{
     width: 100%;   
     height: 50dvh;
     border-bottom: 1px solid var(--color2);
-
     box-shadow: rgba(0, 238, 255, 0.35) 0px 2px 4px;
 }
-
-.aboutstatement{
     
-    text-align: justify;
-    padding: 1rem;
-}
 .aboutstatement h1{
     font-size: 2rem;
     letter-spacing: 0.2ch;
 }
+.aboutstatement{
+    text-align: justify;
+    padding: 1rem;
+}
 .aboutstatement p{
     margin-top: 1rem;
 }
+
 
 /*main project page*/
 #projects{
@@ -268,7 +226,6 @@ ul{
 }
 .projects{
     display: grid;
-    grid-template-columns: 30% 30%;
     justify-content: center;
     align-items: center;
 
@@ -276,10 +233,7 @@ ul{
     margin-top: 2rem;
 
 }
-.projectheader{
-    margin-top: 5rem;
-    padding: 1rem 5rem;
-}
+
 .projectheader h1{
     font-size: 2rem;
     letter-spacing: .25ch;
@@ -291,14 +245,15 @@ ul{
     border: 1px solid var(--color2);
     box-shadow: rgba(0, 238, 255, 0.35) 0px 5px 15px;
 
-    margin-bottom: 3rem;
-    margin-left: 3rem;
     transition: border .5s ease, box-shadow .5s;
 }
+
 .projects > div:hover{
     box-shadow: rgba(205, 88, 136, 0.35) 0px 5px 15px;
     border: 1px solid var(--color3);
 }
+
+
 
 
 .projcon{
@@ -389,7 +344,7 @@ ul{
 
 /*Special Pop up**/
 .specialpopup{
-    background: #00000083;
+    background: #0000009d;
     width: 100%;
     height: 100dvh;
 
@@ -404,11 +359,9 @@ ul{
 }
 
 .specialrep{
-    width: 50%;
     background-color: var(--color1);
 
     display: grid;
-    grid-template-columns: 50% 50%;
     justify-content: center;
     box-shadow: rgba(0, 238, 255, 0.35) 0px 5px 15px;
     border: 0;
@@ -418,7 +371,6 @@ ul{
     left: 50%;
     translate: -50% -50%;
 }
-
 
 .specialrep legend{
     font-size: 1.5rem;
@@ -431,13 +383,7 @@ ul{
     margin: 1rem;
 }
 
-.closebtn{
-    position: absolute;
 
-    top: 0;
-    right: 0;
-    transform: translate(50%, -75%);
-}
 .closebtn i{
     font-size: 3rem;   
     color: var(--color2);
