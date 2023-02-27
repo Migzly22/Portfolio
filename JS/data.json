@@ -1,0 +1,17 @@
+{
+    "proj1":{
+        "title": "Ochado Payroll System",
+        "about": "//Ochado Payroll System",
+        "languages": ["CSS", "HTML", "JS", "SQL", "PHP"]
+    },
+    "proj2":{
+        "title": "Proclimate Employee Management System",
+        "about": "//Proclimate Employee Management System",
+        "languages": ["PHP", "SQL", "JS"]
+    },
+    "proj3":{
+        "title": "JB's Korean Blind Static Website",
+        "about": "//JB's Korean Blind Static Website",
+        "languages": ["HTML", "CSS", "JS"]
+    }
+}
