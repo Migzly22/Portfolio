@@ -5,33 +5,56 @@ import data from './data.json' assert {type:'json'}
 
 const homebtn = document.getElementById('homebtn')
 const aboutbtn = document.getElementById('aboutbtn')
-const projbtn = document.getElementById('projbtn')
+const projbtn = document.getElementById('projbtn'),
+    homebtn2 = document.getElementById('homebtn2'),
+    aboutbtn2 = document.getElementById('aboutbtn2'),
+    projbtn2 = document.getElementById('projbtn2'),
+    viewproj3 = document.getElementById('viewproj3')
 
 
 function reset (){
     homebtn.classList.remove("mnavactive")
     aboutbtn.classList.remove("mnavactive")
     projbtn.classList.remove("mnavactive")
+    homebtn2.classList.remove("mnavactive2")
+    aboutbtn2.classList.remove("mnavactive2")
+    projbtn2.classList.remove("mnavactive2")
 }
 
-function addactive(subject){
+function addactive(subject, subject2){
     subject.classList.add("mnavactive")
+    subject2.classList.add("mnavactive2")
 }
 
 homebtn.addEventListener('click',()=>{
     reset()
-    addactive(homebtn)
+    addactive(homebtn, homebtn2)
 })
 aboutbtn.addEventListener('click',()=>{
     reset()
-    addactive(aboutbtn)
+    addactive(aboutbtn, aboutbtn2)
 })
 projbtn.addEventListener('click',()=>{
     reset()
-    addactive(projbtn)
+    addactive(projbtn, projbtn2)
+})
+homebtn2.addEventListener('click',()=>{
+    reset()
+    addactive(homebtn, homebtn2)
+})
+aboutbtn2.addEventListener('click',()=>{
+    reset()
+    addactive(aboutbtn, aboutbtn2)
+})
+projbtn2.addEventListener('click',()=>{
+    reset()
+    addactive(projbtn, projbtn2)
 })
 
-
+viewproj3.addEventListener('click',()=>{
+    reset()
+    addactive(projbtn, projbtn2)
+})
 
 const specialpopup = document.getElementsByClassName("specialpopup")[0]
 const closebtn = document.getElementsByClassName('closebtn')[0]
@@ -85,3 +108,14 @@ function popup(id){
     spaboutinfo.innerHTML = `<div> ${datas["about"]} </div>`
 }
 
+const showothermainnav = document.getElementById('showothermainnav'),
+    mainnav2 = document.getElementById('mainnav2'),
+    closenav2 = document.getElementById('closenav2')
+    
+    
+showothermainnav.addEventListener('click',(e)=>{
+    mainnav2.style.left = "0%";
+})
+closenav2.addEventListener('click',(e)=>{
+    mainnav2.style.left = "100%";
+})

@@ -1,5 +1,65 @@
 @media only screen and (max-width:600px){
+    .mainnav{
+        z-index: 20;
+    }
+    #showothermainnav i{
+        font-size: 1.7rem;
+    }
+    .mainnav a{
+        padding: 0;
+    }
+    .mainnav ul li:nth-child(2),
+    .mainnav ul li:nth-child(3),
+    .mainnav ul li:nth-child(4)
+    {
+        display: none;
+    }
 
+    #mainnav2{
+        width: 100%;
+        height: 100dvh;
+        position: fixed;
+        left: 100%;
+        z-index: 30;
+
+
+        /* From https://css.glass */
+        background: rgba(32, 38, 46, 0.55);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        transition: all 400ms ease;
+    }
+    #mainnav2 ul{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+    #mainnav2 ul > li{
+        text-align: center;  
+        width: 100%;
+        height: 5rem;   
+        line-height: 5rem; 
+    }
+    #mainnav2 a{
+        font-size: 1.5rem;
+    }
+    #mainnav2 i{
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+
+    .mnavactive2{
+        border-bottom: 1px solid var(--color2);   
+    }
 
     .mainimg{
         display: none;
@@ -7,6 +67,11 @@
     .aboutimg{
         display: none;
     }
+    #mainnav2 i:hover{
+        color: var(--color3);
+    }
+
+
     
 
 
@@ -72,7 +137,12 @@
 }
 
 @media only screen and (min-width:600px){
-
+    #mainnav2{
+        display: none;
+    }
+    #showothermainnav{
+        display: none;
+    }
     /*main Sidenav*/
     .sidenav{
         position: fixed;
